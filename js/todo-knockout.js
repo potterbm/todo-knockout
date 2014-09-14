@@ -12,7 +12,7 @@ function Item(text, completed) {
 	self.text = ko.observable(text);
 	self.completed = ko.observable(false);
 	
-	self.toggleComplete = function() {
+	self.toggleCompleted = function() {
 		self.completed(!self.completed());
 	}
 }
