@@ -24,7 +24,7 @@
 	
 	<section class="item-list-container container">
 		<ul id="list" class="item-list" data-bind="foreach: items">
-			<li data-bind="css: { completed: completed() }"><span data-bind="text: text"></span><input type="text" data-bind="value: text" /></li>
+			<li data-bind="css: { completed: completed() }, click: toggleCompleted()"><span data-bind="text: text"></span><input type="text" data-bind="value: text" /><button class="remove-item-button" data-bind="click: $root.removeItem">Remove</button></li>
 		</ul>
 		
 	</section>

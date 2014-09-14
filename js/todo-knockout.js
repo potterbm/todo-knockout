@@ -1,10 +1,20 @@
 
 function Item(text, completed) {
-	console.log(text);
-	console.log(completed);
+	var self = this;
+	if(typeof(text) == "undefined") {
+		text = "";
+	}
 	
-	this.text = ko.observable(text);
-	this.completed = ko.observable(false);
+	if(typeof(completed) == "undefined") {
+		completed = false;
+	}
+	
+	self.text = ko.observable(text);
+	self.completed = ko.observable(false);
+	
+	self.toggleComplete = function() {
+		self.completed(!self.completed());
+	}
 }
 
 
@@ -22,6 +32,9 @@ function ItemListViewModel() {
 		console.log(event);
 	}
 	
+	self.removeItem = function(item) {
+		self.items.remove(item);
+	}
 	
 }
 
