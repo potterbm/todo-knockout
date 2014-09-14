@@ -28,6 +28,8 @@ function ItemListViewModel() {
 	]);
 	
 	self.addItem = function(root, event) {
+		console.log(root.items);
+		console.log(Item);
 		root.items.add(new Item($(event.target).siblings("input").val()));
 		$(event.target).siblings("input").val('');
 	}
