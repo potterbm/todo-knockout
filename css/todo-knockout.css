@@ -90,13 +90,17 @@ body {
 
 .item {
 	background-color: #AC6C82;
+	color: rgba(255, 255, 255, 0.75);
 	border-radius: .25em;
 	
 	font-size: 1.4em;
+	line-height: 1;
+	font-weight: 300;
 	
 	display: block;
 	margin: 1em 0;
-	padding: 1em 1em;
+	padding: 1.5em 1em;
+	padding-left: 2em;
 	
 	position: relative;
 }
@@ -105,18 +109,14 @@ body {
 	background-color: #685C79;
 }
 
-.item + .item {
-	border-top: none;
-}
-
 .item .item-indicator {
 	background-color: transparent;
 	
-	font-size: 2em;
+	font-size: 1em;
 	
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 1.5em;
+	left: .5em;
 }
 
 .item .item-indicator:before,
@@ -132,11 +132,13 @@ body {
 	border-bottom-right-radius: .0714em;
 	border: none;
 	
-	font-size: 4.4667em;
+	font-size: 4em;
 	
 	position: absolute;
 	top: 0;
 	right: 0;
+	
+	transition: background-color 0.2s ease-in-out;
 }
 
 .remove-item-button:hover {
@@ -147,6 +149,8 @@ body {
 .remove-item-button:after
 {
 	background-color: #AC6C82;
+	
+	transition: background-color 0.2s ease-in-out;
 }
 
 .item.completed .remove-item-button:before,
