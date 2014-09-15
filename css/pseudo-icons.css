@@ -103,7 +103,7 @@
 .ps.ps-accept:before,
 .ps.ps-check:before
 {
-	background-color: transparent;
+	background-color: transparent !important;
 	border-width: 0;
 	border-bottom-width: .02em;
 	border-left-width: .02em;
@@ -124,10 +124,262 @@
 
 
 
+/* Home */
+
+.ps.ps-home:before {
+	background-color: transparent !important;
+	border-style: solid;
+	border-width: 0em;
+	border-top-width: .02em;
+	border-right-width: .02em;
+	
+	content: "";
+	
+	height: 42.426%;
+	width: 42.426%;
+	
+	top: 33.787%; /* 28.787 + 5 */
+	left: 28.787%;
+	
+	transform: rotateZ(-45deg);
+}
+
+.ps.ps-home:after {
+	background-color: transparent !important;
+	border-style: solid;
+	border-width: 0.02em;
+	border-top-width: 0em;
+	
+	content: "";
+	
+	height: 30%;
+	width: 40%;
+	
+	top: 45%;
+	left: 30%;
+}
+
+
+
+/* User */
+
+.ps.ps-user:before,
+.ps.ps-person:before
+{
+	border-radius: .5em;
+	
+	content: "";
+	
+	height: 25%;
+	width: 25%;
+	
+	top: 20%;
+	left: 37.5%;
+}
+
+.ps.ps-user:after,
+.ps.ps-person:after
+{
+	border-top-left-radius: .25em;
+	border-top-right-radius: .25em;
+	
+	content: "";
+	
+	height: 30%;
+	width: 50%;
+	
+	top: 50%;
+	left: 25%;
+}
+
+
+
+/* User (outline) */
+
+.ps.ps-user-outline:before,
+.ps.ps-person-outline:before
+{
+	background-color: transparent !important;
+	border-style: solid;
+	border-width: .02em;
+	border-radius: .5em;
+	
+	content: "";
+	
+	height: 25%;
+	width: 25%;
+	
+	top: 20%;
+	left: 37.5%;
+}
+
+.ps.ps-user-outline:after,
+.ps.ps-person-outline:after
+{
+	background-color: transparent !important;
+	border-style: solid;
+	border-width: .02em;
+	border-top-left-radius: .25em;
+	border-top-right-radius: .25em;
+	
+	content: "";
+	
+	height: 30%;
+	width: 50%;
+	
+	top: 50%;
+	left: 25%;
+}
+
+
+
+
+/* Arrow left */
+
+.ps.ps-arrow-left:before {
+	content: "";
+	
+	height: 2%;
+	width: 60%;
+	
+	top: 49%;
+	left: 20%;
+}
+
+.ps.ps-arrow-left:after {
+	background-color: transparent !important;
+	border-style: solid;
+	border-width: 0;
+	border-left-width: .02em;
+	border-top-width: .02em;
+	
+	content: "";
+	
+	height: 20%;
+	width: 20%;
+	
+	top: 50%;
+	left: 19%;
+	
+	transform-origin: 0 0;
+	transform: rotateZ(-45deg);
+}
+
+
+
+/* Arrow top */
+
+.ps.ps-arrow-top:before,
+.ps.ps-arrow-up:before
+{
+	content: "";
+	
+	height: 60%;
+	width: 2%;
+	
+	top: 20%;
+	left: 49%;
+}
+
+.ps.ps-arrow-top:after,
+.ps.ps-arrow-up:after
+{
+	background-color: transparent !important;
+	border-style: solid;
+	border-width: 0;
+	border-left-width: .02em;
+	border-top-width: .02em;
+	
+	content: "";
+	
+	height: 20%;
+	width: 20%;
+	
+	top: 19%;
+	left: 50%;
+	
+	transform-origin: 0 0;
+	transform: rotateZ(45deg);
+}
+
+
+
+/* Arrow right */
+
+.ps.ps-arrow-right:before {
+	content: "";
+	
+	height: 2%;
+	width: 60%;
+	
+	top: 49%;
+	left: 20%;
+}
+
+.ps.ps-arrow-right:after {
+	background-color: transparent !important;
+	border-style: solid;
+	border-width: 0;
+	border-right-width: .02em;
+	border-top-width: .02em;
+	
+	content: "";
+	
+	height: 20%;
+	width: 20%;
+	
+	top: 50%;
+	left: 61%;
+	
+	transform-origin: 100% 0;
+	transform: rotateZ(45deg);
+}
+
+
+
+
+/* Arrow bottom */
+
+.ps.ps-arrow-bottom:before,
+.ps.ps-arrow-down:before
+{
+	content: "";
+	
+	height: 60%;
+	width: 2%;
+	
+	top: 20%;
+	left: 49%;
+}
+
+.ps.ps-arrow-bottom:after,
+.ps.ps-arrow-down:after
+{
+	background-color: transparent !important;
+	border-style: solid;
+	border-width: 0;
+	border-left-width: .02em;
+	border-bottom-width: .02em;
+	
+	content: "";
+	
+	height: 20%;
+	width: 20%;
+	
+	top: 61%;
+	left: 50%;
+	
+	transform-origin: 0 100%;
+	transform: rotateZ(-45deg);
+}
+
+
+
+
 /* Page */
 
 .ps.ps-page:before {
-	background-color: transparent;
+	background-color: transparent !important;
 	border-style: solid;
 	border-width: .02em;
 	border-bottom-width: 0;
@@ -142,7 +394,7 @@
 }
 
 .ps.ps-page:after {
-	background-color: transparent;
+	background-color: transparent !important;
 	border-style: solid;
 	border-width: .02em;
 	
@@ -180,7 +432,7 @@
 .ps.ps-square-outline:before,
 .ps.ps-square-empty:before
 {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 
@@ -209,7 +461,7 @@
 .ps.ps-circle-outline:before,
 .ps.ps-circle-empty:before
 {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 
@@ -218,7 +470,7 @@
 /* Male */
 
 .ps.ps-male:before {
-	background-color: transparent;
+	background-color: transparent !important;
 	border-radius: 50%;
 	border-width: .02em;
 	border-style: solid;
@@ -252,7 +504,7 @@
 /* Female */
 
 .ps.ps-female:before {
-	background-color: transparent;
+	background-color: transparent !important;
 	border-radius: 50%;
 	border-width: .02em;
 	border-style: solid;
@@ -285,10 +537,10 @@
 .ps.ps-help:before,
 .ps.ps-question:before
 {
-	background-color: transparent;
+	background-color: transparent !important;
 	border-style: solid;
 	border-width: .02em;
-	border-left-color: transparent;
+	border-left-color: transparent !important;
 	border-radius: 50%;
 	
 	content: "";
