@@ -67,10 +67,10 @@ function ItemListViewModel() {
 			return;
 		}
 		
-		var data = JSON.parse(self.storage.getItem("ko-list"));
+		var data = self.storage.getItem("ko-list");
 		
-		if(data.length > 0) {
-			self.items($.map(data, function(item) { return new Item(item); }));
+		if(typeof(data) != "undefined") {
+			self.items($.map(JSON.parse(data), function(item) { return new Item(item); }));
 		}
 	}
 	
@@ -79,7 +79,7 @@ function ItemListViewModel() {
 			return;
 		}
 		
-		storage.set("ko-list", ko.toJSON(self.items));
+		storage.setItem("ko-list", ko.toJSON(self.items));
 	}
 	
 	
