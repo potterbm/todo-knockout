@@ -1,0 +1,316 @@
+
+
+.ps {
+	font-size: 1em;
+	line-height: 1;
+	
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	height: 1em;
+	width: 1em;
+	
+	position: relative;
+}
+
+.ps-2x {
+	font-size: 2em;
+}
+
+.ps-3x {
+	font-size: 3em;
+}
+
+.ps:before,
+.ps:after
+{
+	font-size: 1em;
+	
+	box-sizing: border-box;
+	display: block;
+	
+	position: absolute;
+}
+
+
+
+/* Close/Remove */
+
+.ps.ps-close:before,
+.ps.ps-remove:before,
+.ps.ps-times:before
+{
+	content: "";
+	
+	height: 2%;
+	width: 50%;
+	
+	top: 49%;
+	left: 25%;
+	
+	transform: rotateZ(-135deg);
+}
+
+.ps.ps-close:after,
+.ps.ps-remove:after,
+.ps.ps-times:after
+{
+	content: "";
+	
+	height: 2%;
+	width: 50%;
+	
+	top: 49%;
+	left: 25%;
+	
+	transform: rotateZ(-45deg);
+}
+
+
+
+/* Add/Plus */
+
+.ps.ps-add:before,
+.ps.ps-plus:before
+{
+	content: "";
+	
+	height: 2%;
+	width: 50%;
+	
+	top: 49%;
+	left: 25%;
+}
+
+.ps.ps-add:after,
+.ps.ps-plus:after
+{
+	content: "";
+	
+	height: 2%;
+	width: 50%;
+	
+	top: 49%;
+	left: 25%;
+	
+	transform: rotateZ(-90deg);
+}
+
+
+
+/* Accept/Check */
+
+.ps.ps-accept:before,
+.ps.ps-check:before
+{
+	background-color: transparent;
+	border-width: 0;
+	border-bottom-width: .02em;
+	border-left-width: .02em;
+	border-style: solid;
+	
+	content: "";
+	
+	height: 15%;
+	width: 50%;
+	
+	top: 57.0775%;
+	left: 27.0195%;
+	
+	transform-origin: 0% 0%;
+	transform: rotateZ(-45deg);
+}
+
+
+
+
+/* Page */
+
+.ps.ps-page:before {
+	background-color: transparent;
+	border-style: solid;
+	border-width: .02em;
+	border-bottom-width: 0;
+	
+	content: "";
+	
+	height: 20%;
+	width: 40%;
+	
+	top: 20%;
+	left: 30%;
+}
+
+.ps.ps-page:after {
+	background-color: transparent;
+	border-style: solid;
+	border-width: .02em;
+	
+	content: "";
+	
+	height: 40%;
+	width: 40%;
+	
+	top: 40%;
+	left: 30%;
+}
+
+
+
+
+/* Square */
+
+.ps.ps-square:before,
+.ps.ps-square-full:before,
+.ps.ps-square-outline:before,
+.ps.ps-square-empty:before
+{
+	border-width: .02em;
+	border-style: solid;
+	
+	content: "";
+	
+	height: 40%;
+	width: 40%;
+	
+	top: 30%;
+	left: 30%;
+}
+
+.ps.ps-square-outline:before,
+.ps.ps-square-empty:before
+{
+	background-color: transparent;
+}
+
+
+
+
+/* Circle */
+
+.ps.ps-circle:before,
+.ps.ps-circle-full:before,
+.ps.ps-circle-outline:before,
+.ps.ps-circle-empty:before
+{
+	border-radius: 50%;
+	border-width: .02em;
+	border-style: solid;
+	
+	content: "";
+	
+	height: 40%;
+	width: 40%;
+	
+	top: 30%;
+	left: 30%;
+}
+
+.ps.ps-circle-outline:before,
+.ps.ps-circle-empty:before
+{
+	background-color: transparent;
+}
+
+
+
+
+/* Male */
+
+.ps.ps-male:before {
+	background-color: transparent;
+	border-radius: 50%;
+	border-width: .02em;
+	border-style: solid;
+	
+	content: "";
+	
+	height: 40%;
+	width: 40%;
+	
+	top: 30%;
+	left: 30%;
+}
+
+.ps.ps-male:after {
+	content: "";
+	
+	display: block;
+	height: 2%;
+	width: 15%;
+	
+	top: 35.16%; /* 50 - 14.14 - 0.707 */
+	left: 63.44%; /* 50 + 14.14 - 0.707 */
+	
+	transform-origin: 0 0;
+	transform: rotateZ(-45deg);
+}
+
+
+
+
+/* Female */
+
+.ps.ps-female:before {
+	background-color: transparent;
+	border-radius: 50%;
+	border-width: .02em;
+	border-style: solid;
+	
+	content: "";
+	
+	height: 40%;
+	width: 40%;
+	
+	top: 30%;
+	left: 30%;
+}
+
+.ps.ps-female:after {
+	content: "";
+	
+	display: block;
+	height: 15%;
+	width: 2%;
+	
+	top: 70%;
+	left: 49%;
+}
+
+
+
+
+/* Question Mark */
+
+.ps.ps-help:before,
+.ps.ps-question:before
+{
+	background-color: transparent;
+	border-style: solid;
+	border-width: .02em;
+	border-left-color: transparent;
+	border-radius: 50%;
+	
+	content: "";
+	
+	width: 35%;
+	height: 35%;
+	
+	top: 20%;
+	left: 32.5%;
+	
+	transform: rotateZ(-45deg);
+}
+
+.ps.ps-help:after,
+.ps.ps-question:after
+{
+	
+	content: "";
+	
+	width: 2%;
+	height: 27%;
+	
+	top: 53%;
+	left: 49%;
+}
