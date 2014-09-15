@@ -68,7 +68,9 @@ body {
 	
 	display: block;
 	margin: 0;
-	padding: 1em 0;
+	padding: 1em 3em;
+	
+	position: relative;
 }
 
 .item.completed {
@@ -92,6 +94,10 @@ body {
 
 .remove-item-button {
 	background-color: rgba(0, 0, 0, 0.5);
+	
+	position: absolute;
+	top: 1em;
+	right: 1em;
 }
 
 .remove-item-button:hover {
