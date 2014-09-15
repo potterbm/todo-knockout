@@ -33,10 +33,12 @@ body {
 
 
 
-.new-item-container .new-item-input {
+.new-item-input {
 	background-color: rgba(0, 0, 0, 0.1);
-	border: .0625em solid rgba(255, 255, 255, 0.3);
 	border-radius: .25em;
+	
+	margin: 2em 0;
+	padding: .25em 1em;
 }
 
 .new-item-button {
