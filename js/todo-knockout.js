@@ -3,6 +3,8 @@
 function Item(text, completed) {
 	var self = this;
 	
+	console.log(text);
+	
 	if(typeof(text) == "object") {
 		if(text.text) {
 			self.text = text.text;
