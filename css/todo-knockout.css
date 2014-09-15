@@ -11,10 +11,87 @@
 */
 
 body {
-	background-color: #dddddd;
-	color: #675B57;
+	background-color: #455C7B;
+	color: #f8f8f8;
 	
 	font-family: 'Lato', sans-serif;
 	font-size: 15px;
 	font-weight: 400;
+}
+
+
+
+.container {
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+}
+
+.container:first-of-type {
+	margin-top: 20em;
+}
+
+
+
+.new-item-container .new-item-input {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: .0625em solid rgba(255, 255, 255, 0.3);
+	border-radius: .25em;
+}
+
+.new-item-button {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.new-item-button:before,
+.new-item-button:after
+{
+	background-color: #455C7B;
+}
+
+
+
+.item-list {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.item {
+	background-color: #AC6C82;
+	
+	font-size: 1em;
+	line-height: 1;
+	
+	display: block;
+	margin: 0;
+	padding: 1em 0;
+}
+
+.item.completed {
+	background-color: #685C79;
+}
+
+.item.item-indicator {
+	background-color: transparent;
+	
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+
+.item .item-indicator:before,
+.item .item-indicator:after
+{
+	border-color: #FFBC67;
+	background-color: #FFBC67;
+}
+
+.remove-item-button {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.remove-item-button:hover {
+	background-color: #DA727E;
 }

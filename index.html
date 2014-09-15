@@ -19,12 +19,16 @@
 	
 	<section class="new-item-container container">
 		<input type="text" class="new-item-input" placeholder="Add item" />
-		<button data-bind="click: addItem">Add</button>
+		<button data-bind="click: addItem" class="ps ps-close"></button>
 	</section>
 	
 	<section class="item-list-container container">
 		<ul id="list" class="item-list" data-bind="foreach: items">
-			<li data-bind="css: { completed: completed() }, click: toggleCompleted()"><span data-bind="text: text"></span><input type="text" data-bind="value: text" /><button class="remove-item-button" data-bind="click: $root.removeItem">Remove</button></li>
+			<li data-bind="css: { completed: completed() }, click: toggleCompleted()" class="item">
+				<span class="item-indicator ps ps-circle-empty" data-bind="css: { ps-circle-full: completed() }"></span>
+				<span data-bind="text: text"></span>
+				<button class="remove-item-button ps ps-remove" data-bind="click: $root.removeItem"></button>
+			</li>
 		</ul>
 		
 	</section>
