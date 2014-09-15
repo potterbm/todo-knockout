@@ -5,7 +5,7 @@ function Item(text, completed) {
 		text = "";
 	}
 	
-	if(typeof(completed) == "undefined") {
+	if(completed !== true) {
 		completed = false;
 	}
 	
