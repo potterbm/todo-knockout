@@ -67,9 +67,11 @@ function ItemListViewModel() {
 			return;
 		}
 		
-		self.items($.map(JSON.parse(self.storage.getItem("ko-list")), function(item) {
-			return new Item(item);
-		}));
+		var data = JSON.parse(self.storage.getItem("ko-list"));
+		
+		if(data.length > 0) {
+			self.items($.map(data, function(item) { return new Item(item); }));
+		}
 	}
 	
 	self.save = function() {
