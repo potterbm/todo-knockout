@@ -24,7 +24,7 @@ body {
 .container {
 	display: block;
 	margin: 0 auto;
-	width: 60%;
+	width: 40%;
 }
 
 .container:first-of-type {
@@ -59,16 +59,15 @@ body {
 }
 
 .item {
-	border-top: 1px solid rgba(255, 255, 255, 0.5);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	border: 2px solid rgba(255, 255, 255, 0.5);
 	background-color: #AC6C82;
 	
-	font-size: 1em;
-	line-height: 1;
+	font-size: 1.5em;
+	line-height: 2;
 	
 	display: block;
 	margin: 0;
-	padding: 1em 3em;
+	padding: 0 1em;
 	
 	position: relative;
 }
@@ -77,12 +76,18 @@ body {
 	background-color: #685C79;
 }
 
-.item.item-indicator {
+.item + .item {
+	border-top: none;
+}
+
+.item .item-indicator {
 	background-color: transparent;
 	
+	font-size: 2em;
+	
 	position: absolute;
-	top: 1em;
-	left: 1em;
+	top: 0;
+	left: 0;
 }
 
 .item .item-indicator:before,
@@ -94,10 +99,13 @@ body {
 
 .remove-item-button {
 	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+	
+	font-size: 2em;
 	
 	position: absolute;
-	top: 1em;
-	right: 1em;
+	top: 0;
+	right: 0;
 }
 
 .remove-item-button:hover {
