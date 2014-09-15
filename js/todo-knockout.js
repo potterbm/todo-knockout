@@ -69,7 +69,7 @@ function ItemListViewModel() {
 		
 		var data = self.storage.getItem("ko-list");
 		
-		if(typeof(data) != "undefined") {
+		if(data && typeof(data) != "undefined") {
 			self.items($.map(JSON.parse(data), function(item) { return new Item(item); }));
 		}
 	}
