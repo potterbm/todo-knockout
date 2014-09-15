@@ -136,11 +136,16 @@ body {
 .item .item-indicator:after
 {
 	border-color: rgba(255, 255, 255, 0.8);
-	border-color: #455C7B;
 	background-color: rgba(255, 255, 255, 0.8);
-	background-color: #455C7B;
 	
 	transition: all 0.3s ease-in-out;
+}
+
+.item.completed .item-indicator:before,
+.item.completed .item-indicator:after
+{
+	border-color: #455C7B;
+	background-color: #455C7B;
 }
 
 .remove-item-button {
