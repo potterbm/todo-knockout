@@ -93,6 +93,8 @@ body {
 	color: rgba(255, 255, 255, 0.75);
 	border-radius: .25em;
 	
+	cursor: pointer;
+	
 	font-size: 1.4em;
 	line-height: 1;
 	font-weight: 300;
@@ -110,6 +112,8 @@ body {
 
 .item.completed {
 	background-color: #685C79;
+	
+	opacity: 0.8;
 }
 
 .item .item-indicator {
