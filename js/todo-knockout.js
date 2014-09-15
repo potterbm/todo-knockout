@@ -3,20 +3,6 @@
 function Item(text, completed) {
 	var self = this;
 	
-	if(typeof(text) == "object") {
-		self.parseObject(text);
-	}
-	
-	else if(typeof(text) == "undefined") {
-		self.text = ko.observable("");
-		self.completed = ko.observable(false);
-	}
-	
-	else {
-		self.text = ko.observable(text);
-		self.completed = ko.observable(completed === true);
-	}
-	
 	self.toggleCompleted = function() {
 		self.completed(!self.completed());
 	}
@@ -30,6 +16,20 @@ function Item(text, completed) {
 		}
 		
 		self.completed = ko.observable(object.completed && object.completed === true);
+	}
+	
+	if(typeof(text) == "object") {
+		self.parseObject(text);
+	}
+	
+	else if(typeof(text) == "undefined") {
+		self.text = ko.observable("");
+		self.completed = ko.observable(false);
+	}
+	
+	else {
+		self.text = ko.observable(text);
+		self.completed = ko.observable(completed === true);
 	}
 }
 
