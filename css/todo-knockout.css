@@ -100,9 +100,12 @@ body {
 	display: block;
 	margin: 1em 0;
 	padding: 1.5em 1em;
-	padding-left: 2em;
+	padding-left: 4em;
+	min-height: 1em;
 	
 	position: relative;
+	
+	transition: background-color 0.3s ease-in-out;
 }
 
 .item.completed {
@@ -112,18 +115,22 @@ body {
 .item .item-indicator {
 	background-color: transparent;
 	
-	font-size: 1em;
+	font-size: 4em;
 	
 	position: absolute;
-	top: 1.5em;
-	left: .5em;
+	top: 0;
+	left: 0;
+	
+	transition: all 0.3s ease-in-out;
 }
 
 .item .item-indicator:before,
 .item .item-indicator:after
 {
-	border-color: #FFBC67;
-	background-color: #FFBC67;
+	border-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.4);
+	
+	transition: all 0.3s ease-in-out;
 }
 
 .remove-item-button {
