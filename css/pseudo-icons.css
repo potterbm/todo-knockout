@@ -445,7 +445,7 @@
 .ps.ps-circle-outline:before,
 .ps.ps-circle-empty:before
 {
-	border-radius: 50%;
+	border-radius: 1em;
 	border-width: .02em;
 	border-style: solid;
 	
@@ -471,7 +471,7 @@
 
 .ps.ps-male:before {
 	background-color: transparent !important;
-	border-radius: 50%;
+	border-radius: 1em;
 	border-width: .02em;
 	border-style: solid;
 	
@@ -505,7 +505,7 @@
 
 .ps.ps-female:before {
 	background-color: transparent !important;
-	border-radius: 50%;
+	border-radius: 1em;
 	border-width: .02em;
 	border-style: solid;
 	
@@ -541,7 +541,7 @@
 	border-style: solid;
 	border-width: .02em;
 	border-left-color: transparent !important;
-	border-radius: 50%;
+	border-radius: 1em;
 	
 	content: "";
 	
