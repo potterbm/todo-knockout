@@ -3,33 +3,20 @@
 function Item(text, completed) {
 	var self = this;
 	
-	self.toggleCompleted = function() {
-		self.completed(!self.completed());
-	}
-	
-	self.parseObject = function(object) {
-		if(object.text) {
-			self.text = ko.observable(object.text);
-		}
-		else {
-			self.text = ko.observable("");
-		}
-		
-		self.completed = ko.observable(object.completed && object.completed === true);
-	}
-	
 	if(typeof(text) == "object") {
-		self.parseObject(text);
-	}
-	
-	else if(typeof(text) == "undefined") {
-		self.text = ko.observable("");
-		self.completed = ko.observable(false);
+		var object = $.extend({ text : "", completed : false }, text);
+		
+		self.text = ko.observable(object.text);
+		self.completed = ko.observable(object.completed);
 	}
 	
 	else {
 		self.text = ko.observable(text);
-		self.completed = ko.observable(completed === true);
+		self.completed = ko.observable(!!completed);
+	}
+	
+	self.toggleCompleted = function() {
+		self.completed(!self.completed());
 	}
 }
 
