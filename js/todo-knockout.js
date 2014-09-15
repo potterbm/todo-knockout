@@ -79,7 +79,7 @@ function ItemListViewModel() {
 			return;
 		}
 		
-		storage.setItem("ko-list", ko.toJSON(self.items));
+		self.storage.setItem("ko-list", ko.toJSON(self.items));
 	}
 	
 	
