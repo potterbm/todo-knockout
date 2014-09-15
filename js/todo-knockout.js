@@ -3,41 +3,33 @@
 function Item(text, completed) {
 	var self = this;
 	
-	console.log(text);
-	console.log(typeof(text));
-	console.log(text.text);
-	console.log(text.completed);
-	console.log(text.completed === true);
-	
 	if(typeof(text) == "object") {
-		if(text.text) {
-			self.text = text.text;
-		}
-		else {
-			self.text = "";
-		}
-		
-		if(text.completed && text.completed === true) {
-			self.completed = true;
-		}
-		else {
-			self.completed = false;
-		}
+		self.parseObject(text);
 	}
 	
 	else if(typeof(text) == "undefined") {
-		text = "";
+		self.text = ko.observable("");
+		self.completed = ko.observable(false);
 	}
 	
-	else if(completed !== true) {
-		completed = false;
+	else {
+		self.text = ko.observable(text);
+		self.completed = ko.observable(completed === true);
 	}
-	
-	self.text = ko.observable(text);
-	self.completed = ko.observable(completed);
 	
 	self.toggleCompleted = function() {
 		self.completed(!self.completed());
+	}
+	
+	self.parseObject = function(object) {
+		if(object.text) {
+			self.text = ko.observable(object.text);
+		}
+		else {
+			self.text = ko.observable("");
+		}
+		
+		self.completed = ko.observable(object.completed && object.completed === true);
 	}
 }
 
