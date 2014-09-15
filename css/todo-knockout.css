@@ -36,6 +36,8 @@ body {
 
 
 .new-item-container {
+	margin-bottom: 8em;
+	
 	position: relative;
 }
 
@@ -51,7 +53,7 @@ body {
 	
 	box-sizing: border-box;
 	display: block;
-	margin: 2em 0;
+	margin: 0;
 	padding: 1em 1em;
 	width: 100%;
 }
@@ -83,18 +85,18 @@ body {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 .item {
-	border: 2px solid rgba(255, 255, 255, 0.5);
 	background-color: #AC6C82;
+	border-radius: .25em;
 	
-	font-size: 1.5em;
-	line-height: 2;
+	font-size: 1.4em;
 	
 	display: block;
-	margin: 0;
-	padding: 0 1em;
+	margin: 1em 0;
+	padding: 1em 1em;
 	
 	position: relative;
 }
@@ -126,9 +128,11 @@ body {
 
 .remove-item-button {
 	background-color: rgba(0, 0, 0, 0.5);
+	border-top-right-radius: .0714em;
+	border-bottom-right-radius: .0714em;
 	border: none;
 	
-	font-size: 2em;
+	font-size: 4.4667em;
 	
 	position: absolute;
 	top: 0;
@@ -137,4 +141,16 @@ body {
 
 .remove-item-button:hover {
 	background-color: #DA727E;
+}
+
+.remove-item-button:before,
+.remove-item-button:after
+{
+	background-color: #AC6C82;
+}
+
+.item.completed .remove-item-button:before,
+.item.completed .remove-item-button:after
+{
+	background-color: #685C79;
 }
