@@ -60,7 +60,7 @@ body {
 }
 
 .new-item-button {
-	background-color: #FFBC67;
+	background-color: rgba(255, 255, 255, 0.5);
 	border-top-right-radius: .0714em;
 	border-bottom-right-radius: .0714em;
 	border: none;
@@ -71,6 +71,10 @@ body {
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+
+.new-item-button:hover {
+	background-color: #FFBC67;
 }
 
 .new-item-button:before,

@@ -4,6 +4,10 @@ function Item(text, completed) {
 	var self = this;
 	
 	console.log(text);
+	console.log(typeof(text));
+	console.log(text.text);
+	console.log(text.completed);
+	console.log(text.completed === true);
 	
 	if(typeof(text) == "object") {
 		if(text.text) {
@@ -21,11 +25,11 @@ function Item(text, completed) {
 		}
 	}
 	
-	if(typeof(text) == "undefined") {
+	else if(typeof(text) == "undefined") {
 		text = "";
 	}
 	
-	if(completed !== true) {
+	else if(completed !== true) {
 		completed = false;
 	}
 	
