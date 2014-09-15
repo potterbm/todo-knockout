@@ -59,6 +59,8 @@ body {
 }
 
 .item {
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 	background-color: #AC6C82;
 	
 	font-size: 1em;
