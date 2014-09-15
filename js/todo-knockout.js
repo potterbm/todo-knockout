@@ -44,14 +44,10 @@ function ItemListViewModel() {
 	self.addItem = function(data, event) {
 		self.items.push(new Item($("#new-item-input").val()));
 		$("#new-item-input").val('');
-		
-		self.save();
 	}
 	
 	self.removeItem = function(item) {
 		self.items.remove(item);
-		
-		self.save();
 	}
 	
 	self.initStorage = function() {
