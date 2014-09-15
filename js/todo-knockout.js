@@ -4,10 +4,7 @@ function Item(text, completed) {
 	var self = this;
 	
 	if(typeof(text) == "object") {
-		console.log(text);
 		var object = $.extend({ text : "", completed : false }, text);
-		console.log(object);
-		console.log(!!object.completed);
 		
 		self.text = ko.observable(object.text);
 		self.completed = ko.observable(!!object.completed);
