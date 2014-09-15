@@ -467,6 +467,35 @@
 
 
 
+/* Bullet */
+
+.ps.ps-bullet:before,
+.ps.ps-bullet-full:before,
+.ps.ps-bullet-outline:before,
+.ps.ps-bullet-empty:before
+{
+	border-radius: 1em;
+	border-width: .02em;
+	border-style: solid;
+	
+	content: "";
+	
+	height: 20%;
+	width: 20%;
+	
+	top: 40%;
+	left: 40%;
+}
+
+.ps.ps-bullet-outline:before,
+.ps.ps-bullet-empty:before
+{
+	background-color: transparent !important;
+}
+
+
+
+
 /* Male */
 
 .ps.ps-male:before {
