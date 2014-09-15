@@ -18,10 +18,10 @@
 <body>
 	
 	
-	<section class="new-item-container container">
-		<input type="text" class="new-item-input" placeholder="Add item" />
-		<button data-bind="click: addItem" class="new-item-button ps ps-add"></button>
-	</section>
+	<form class="new-item-container container" data-bind="submit: addItem">
+		<input id="new-item-input" type="text" class="new-item-input" placeholder="Add item" />
+		<button class="new-item-button ps ps-add" type="submit"></button>
+	</form>
 	
 	<section class="item-list-container container">
 		<ul id="list" class="item-list" data-bind="foreach: items">

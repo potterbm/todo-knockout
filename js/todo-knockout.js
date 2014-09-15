@@ -24,12 +24,12 @@ function ItemListViewModel() {
 	self.items = ko.observableArray([
 		new Item("First Item"),
 		new Item("Second Item", true),
-		new Item()
+		new Item("Another thing")
 	]);
 	
 	self.addItem = function(root, event) {
-		root.items.push(new Item($(event.target).siblings("input").val()));
-		$(event.target).siblings("input").val('');
+		root.items.push(new Item($("#new-item-input").val()));
+		$("#new-item-input").val('');
 	}
 	
 	self.removeItem = function(item) {

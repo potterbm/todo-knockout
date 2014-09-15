@@ -116,6 +116,8 @@ body {
 	background-color: #685C79;
 	
 	opacity: 0.8;
+	
+	text-decoration: line-through;
 }
 
 .item .item-indicator {
@@ -133,8 +135,10 @@ body {
 .item .item-indicator:before,
 .item .item-indicator:after
 {
-	border-color: rgba(255, 255, 255, 0.4);
-	background-color: rgba(255, 255, 255, 0.4);
+	border-color: rgba(255, 255, 255, 0.8);
+	border-color: #455C7B;
+	background-color: rgba(255, 255, 255, 0.8);
+	background-color: #455C7B;
 	
 	transition: all 0.3s ease-in-out;
 }
@@ -144,6 +148,7 @@ body {
 	border-top-right-radius: .0714em;
 	border-bottom-right-radius: .0714em;
 	border: none;
+	outline: none;
 	
 	font-size: 4em;
 	
