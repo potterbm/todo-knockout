@@ -5,7 +5,6 @@ function Item(text, completed) {
 		text = "";
 	}
 	
-	console.log(completed);
 	if(completed !== true) {
 		completed = false;
 	}
@@ -13,13 +12,9 @@ function Item(text, completed) {
 	self.text = ko.observable(text);
 	self.completed = ko.observable(completed);
 	
-	console.log(self.completed());
-	
 	self.toggleCompleted = function() {
 		self.completed(!self.completed());
 	}
-	
-	console.log(self.completed());
 }
 
 
