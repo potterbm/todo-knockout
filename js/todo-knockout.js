@@ -67,7 +67,7 @@ function ItemListViewModel() {
 			return;
 		}
 		
-		self.items($.map(JSON.parse(storage.getItem("ko-list")), function(item) {
+		self.items($.map(JSON.parse(self.storage.getItem("ko-list")), function(item) {
 			return new Item(item);
 		}));
 	}
