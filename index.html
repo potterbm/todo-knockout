@@ -25,7 +25,7 @@
 	
 	<section class="item-list-container container">
 		<ul id="list" class="item-list" data-bind="foreach: items">
-			<li data-bind="css: { completed: completed() }, click: toggleCompleted(), click: $root.save" class="item">
+			<li data-bind="css: { completed: completed() }, click: function() { toggleCompleted(); $root.save(); }" class="item">
 				<span class="item-indicator ps" data-bind="css: { 'ps-bullet-empty': !completed(), 'ps-check': completed() }"></span>
 				<span data-bind="text: text"></span>
 				<button class="remove-item-button ps ps-remove" data-bind="click: $root.removeItem"></button>
