@@ -56,7 +56,6 @@ function ItemListViewModel() {
 	}
 	
 	self.save = function() {
-		console.log('save');
 		if(self.storage === false) {
 			return;
 		}
